@@ -1,0 +1,25 @@
+.user-form__control {
+  width: 320px;
+}
+
+.user-form__control label {
+  color: black;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.user-form__control input {
+  font: inherit;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 20rem;
+  max-width: 100%;
+}
+
+.user-control__buttons button {
+  float: right;
+  width: 100px;
+  height: 30px;
+}
