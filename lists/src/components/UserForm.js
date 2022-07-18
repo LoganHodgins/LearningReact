@@ -9,10 +9,16 @@ const UserForm = props => {
 
   const submitHandler = event => {
     event.preventDefault();
+    const movieName = enteredName.current.value;
+    const movieDate = enteredDate.current.value;
+
+    if (movieName.trim().length === 0 || movieDate.length === 0) {
+      return;
+    }
 
     const movie = {
-      name: enteredName.current.value,
-      date: enteredDate.current.value,
+      name: movieName,
+      date: movieDate,
       id: Math.random().toString(),
     };
 
@@ -21,6 +27,11 @@ const UserForm = props => {
     enteredName.current.value = '';
     enteredDate.current.value = '';
   };
+
+  const cancelHandler = () => {
+    enteredName.current.value = '';
+    enteredDate.current.value = '';
+  }
 
   return (
     <form onSubmit={submitHandler}>
@@ -35,7 +46,7 @@ const UserForm = props => {
         </div>
         <div className='user-control__buttons'>
           <button type='submit'>Submit</button>
-          <button type='button'>Cancel</button>
+          <button type='button' onClick={cancelHandler}>Cancel</button>
         </div>
       </div>
     </form>);
