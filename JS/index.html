@@ -54,6 +54,18 @@
     </tr>
   </table>
 
+  <div>
+    <div>
+      <div>
+        <p id="grey-text">Make Me Grey!</p>
+      </div>
+    </div>
+  </div>
+
+  <table id="fun-table">
+
+  </table>
+
   <script>
     let table = document.body.firstChild.nextSibling;
 
@@ -65,6 +77,30 @@
     for (let child of document.body.children) {
       console.log(child);
     }
+
+    //let div = table.nextSibling.nextSibling;
+    //let p = div.firstElementChild.firstElementChild.firstElementChild;
+    let p = document.getElementById('grey-text');
+    p.style.backgroundColor = 'grey';
+
+    let funTable = document.getElementById('fun-table');
+    for (let i = 0; i < 8; i++) {
+      let row = funTable.insertRow(i);
+      for (let j = 0; j < 8; j++) {
+        let cell = row.insertCell(j);
+        cell.innerHTML = 'FUN';
+      }
+    }
+
+    let nodes = funTable.querySelectorAll('td');
+    setInterval(() => {
+      for (let node of nodes) {
+        let r = Math.floor(Math.random() * 256);
+        let g = Math.floor(Math.random() * 256);
+        let b = Math.floor(Math.random() * 256);
+        node.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+      }
+    }, 1000);
 
   </script>
 
