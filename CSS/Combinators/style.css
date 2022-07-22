@@ -1,0 +1,33 @@
+body {
+  background-color: lightgray;
+}
+
+p {
+  background-color: green;
+}
+
+div {
+  background-color: aqua;
+  width: 90%;
+}
+
+.box {
+  background-color: grey;
+  height: 200px;
+}
+
+.box > p {
+  background-color: yellow;
+}
+
+div + p {
+  background-color: pink;
+}
+
+section p {
+  background-color: blue;
+}
+
+section ~ p {
+  background-color: red;
+}
