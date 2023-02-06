@@ -1,0 +1,19 @@
+body {
+  background-color: lightslategray;
+}
+
+h1 {
+  color: white;
+}
+
+.cloud-form {
+  background-color: lightblue;
+  border: 3px solid rgb(80, 181, 214);
+  border-radius: 16px;
+  height: 400px;
+  width: 350px;
+}
+
+.login {
+  display: none;
+}
