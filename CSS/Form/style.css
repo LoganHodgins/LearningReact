@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+* {
+  font-family: 'roboto', sans-serif;
+  font-weight: 400;
+}
+
 body {
   background-color: lightslategray;
 }
@@ -7,11 +14,40 @@ h1 {
 }
 
 .cloud-form {
-  background-color: lightblue;
-  border: 3px solid rgb(80, 181, 214);
-  border-radius: 16px;
+  background-image: linear-gradient(#87ceeb, white);
+  border: 1px solid black;
+  border-radius: 8px;
   height: 400px;
   width: 350px;
+}
+
+div>form {
+  margin: 0 auto;
+  width: 85%;
+}
+
+input {
+  border: 1px solid grey;
+  border-radius: 4px;
+  width: 95%;
+  height: 24px;
+}
+
+label {
+  float: left;
+  clear: left;
+  width: 100%;
+}
+
+button {
+  margin: 8px 0px;
+  height: 28px;
+  width: 80px;
+}
+
+form>button {
+  display: block;
+  float: right;
 }
 
 .hide-form {
