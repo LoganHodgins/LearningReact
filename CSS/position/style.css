@@ -1,0 +1,37 @@
+body {
+  background-color: gray;
+  height: 1000px;
+}
+
+.container {
+  position: relative;
+  background-color: green;
+  height: 100px;
+  width: 800px;
+}
+
+.card {
+  text-align: center;
+  background-color: white;
+  height: 50px;
+  width: 400px;
+  border-radius: 10px;
+}
+
+.card-1 {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+}
+
+.card-2 {
+  position: absolute;
+  left: 30%;
+  top: 20%;
+}
+
+.card-3 {
+  position: relative;
+  top: 30px;
+  left: 20px;
+}
