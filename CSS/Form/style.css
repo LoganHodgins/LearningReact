@@ -14,42 +14,36 @@ h1 {
 }
 
 .cloud-form {
-  background-image: linear-gradient(#87ceeb, white);
+  background-image: linear-gradient(#2980b9, #6dd5fa, #ffffff);
   border: 1px solid black;
   border-radius: 8px;
-  height: 400px;
-  width: 350px;
-}
-
-div>form {
-  margin: 0 auto;
-  width: 85%;
-}
-
-input {
-  border: 1px solid grey;
-  border-radius: 4px;
-  width: 95%;
-  height: 24px;
-}
-
-label {
-  float: left;
-  clear: left;
-  width: 100%;
-}
-
-button {
-  margin: 8px 0px;
-  height: 28px;
-  width: 80px;
-}
-
-form>button {
-  display: block;
-  float: right;
+  height: 25rem;
+  width: 22rem;
+  box-shadow: 0 1px 43px 9px #ffffff;
 }
 
 .hide-form {
   display: none;
+}
+
+.signup-form label {
+  font-weight: bold;
+}
+
+.signup-form label,
+.signup-form input,
+.signup-form button {
+  display: block;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.signup-form button {
+  width: 33%;
+}
+
+#form-sign-up {
+  width: 75%;
+  margin: auto;
+  padding: 1rem;
 }
