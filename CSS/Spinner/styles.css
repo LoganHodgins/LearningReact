@@ -1,0 +1,22 @@
+:root {
+    --spinner-color: #000;
+}
+
+.spinner {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border-bottom: 4px solid var(--spinner-color);
+    border-left: 4px solid #fff;
+    border-right: 4px solid #fff;
+    animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
