@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="dropdown">
+        <button id="dropdown"><i class="gg-menu"></i></button>
+        <nav class="menu">
+            <div class="menu-items">
+                <input type="text" placeholder="Search">
+                <a href="">Dashboard</a>
+                <a href="">Pull Requests</a>
+                <a href="">Issues</a>
+                <a href="">Codespaces</a>
+                <a href="">Marketplace</a>
+                <a href="">Explore</a>
+                <a href="">Sponsors</a>
+                <a href="">Settings</a>
+                <a href="">Logan Hodgins</a>
+                <a href="">Sign out</a>
+            </div>
+        </nav>
+    </div>
+    <script>
+        const dropdown = document.getElementById("dropdown");
+
+        dropdown.addEventListener('click', () => {
+            const menu = document.getElementsByClassName('menu')[0];
+            menu.style.display = menu.style.display == 'none' ? 'block' : 'none';
+        })
+    </script>
+</body>
+</html>
